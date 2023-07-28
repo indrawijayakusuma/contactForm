@@ -97,11 +97,11 @@
             <p class="text-sm text-gray-400 text-center mb-6">Please enter your personal information</p>
             <div class="my-3">
               <label for="name" class="ml-2">Name</label>
-              <input id="name" placeholder="Enter your name" type="text" name="nama" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
+              <input required id="name" placeholder="Enter your name" type="text" name="nama" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
             </div>
             <div class="my-3">
               <label for="phone" class="ml-2">Phone Number</label>
-              <input id="phone" placeholder="Enter your phone number" type="text" name="phone" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
+              <input required id="phone" placeholder="Enter your phone number" type="text" name="phone" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
             </div>
           </div>
           <div class="secound-section hidden">
@@ -163,7 +163,7 @@
   <!-- endForm -->
 
   <!-- footer -->
-  <footer class="bg-[#1E1E1E] mt-20">
+  <footer class="bg-[#1E1E1E] mt-20 p">
     <div>
       <p>ewfweewf</p>
     </div>
@@ -248,8 +248,15 @@
     });
   
     btnNextToSecond.addEventListener('click', (e) => {
+      const inpName = document.getElementById('name');
+      const inpPhone = document.getElementById('phone');
       e.preventDefault();
-      second();
+      if(!(inpName.checkValidity() && inpPhone.checkValidity())){
+        inpPhone.reportValidity();
+        inpName.reportValidity();
+      }else{
+        second();
+      }
     });
 
     btnNextToThird.addEventListener('click', (e) => {
