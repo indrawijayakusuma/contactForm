@@ -15,21 +15,37 @@
 <body class="p-0 m-0">
 
 <!-- navbar -->
-  <nav class="bg-white g-base-100 shadow-md mb-5">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+<nav class="border-gray-200 bg-gray-50 shadow-md">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="https://flowbite.com/" class="flex items-center">
-        <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/2560px-BNI_logo.svg.png" class="h-8 mr-3" alt="Flowbite Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+        <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/2560px-BNI_logo.svg.png" class="h-8 mr-3" alt="BNI Logo" />
     </a>
-    <div class="flex md:order-2">
-        <button type="button" class="text-white bg-[#FF6600] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Get started</button>
+    <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-solid-bg" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+      <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+        <li>
+          <a href="index.html" class=" block py-2 pl-3 pr-4 text-white bg-[#FF6600] rounded md:bg-transparent md:text-[#FF6600] md:p-0" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="hallOfFame.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FF6600] md:p-0">Hall of Fame</a>
+        </li>
+      </ul>
     </div>
-    </div>
-  </nav>
+  </div>
+</nav>
 <!-- endNavbar -->
 
+  <div class="bg-slate-500 flex h-[300px] lg:h-[400px]">
+    <h1 class="text-3xl m-auto">AOL KOL</h1>
+  </div>
+
 <!-- progressBar -->
-  <div class="lg:w-[50%] flex w-[90%] mt-12 m-auto mb-4 gap-0.5 justify-center">
+  <div class="lg:w-[50%] flex w-[90%] mt-16 m-auto mb-4 gap-0.5 justify-center">
     <div class="bg-slate-40 flex flex-col items-center text-center">
       <div class="relative w-8 h-8 bg-[#FF6600] rounded-full text-center"><span class="absolute text-xl text-white left-2.5 top-0">1</span></div>
       <p class="progress1 text-xs my-1">In Progress</p>
@@ -91,7 +107,7 @@
           </div>
           <strong class="text-xl align-center cursor-pointer alert-del">&times;</strong>
         </div>
-        <form th:action="@{/process-login}" method="post" name="wpu-contact-form">
+        <form method="post" name="wpu-contact-form">
           <div class="first-section"> 
             <p class="m-auto font-bold text-center text-xl">Personal Information</p>
             <p class="text-sm text-gray-400 text-center mb-6">Please enter your personal information</p>
@@ -109,15 +125,15 @@
             <p class="text-sm text-gray-400 mb-6">Please enter your store information</p>
             <div class="my-3">
               <label for="storeName" class="ml-2">Store Name</label>
-              <input id="storeName" placeholder="Enter your store name" type="text" name="storeName" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
+              <input required id="storeName" placeholder="Enter your store name" type="text" name="storeName" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
             </div>
             <div class="my-3">
               <label for="address" class="ml-2">Address</label>
-              <textarea id="address" rows="4" name="address" class="mt-1.5 block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your store address"></textarea>
+              <textarea required id="address" rows="4" name="address" class="mt-1.5 block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your store address"></textarea>
             </div>
             <div class="my-3">
               <label for="storePhoneNumber" class="ml-2">Phone Number</label>
-              <input id="storePhoneNumber" placeholder="Enter your store phone number" type="text" name="storePhoneNumber" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
+              <input required id="storePhoneNumber" placeholder="Enter your store phone number" type="text" name="storePhoneNumber" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
             </div>
           </div>
           <div class="third-section hidden">
@@ -147,7 +163,6 @@
                   d="M16.9497 7.05015C14.2161 4.31648 9.78392 4.31648 7.05025 7.05015C6.65973 7.44067 6.02656 7.44067 5.63604 7.05015C5.24551 6.65962 5.24551 6.02646 5.63604 5.63593C9.15076 2.12121 14.8492 2.12121 18.364 5.63593C18.7545 6.02646 18.7545 6.65962 18.364 7.05015C17.9734 7.44067 17.3403 7.44067 16.9497 7.05015Z">
                 </path>
               </svg>
-              <span>Loading...</span>
             </button>
             <button class="btn-back-second hidden py-2 bg-[#015E6A] border-0 lg:w-1/4  w-full text-white rounded-2xl" type="button">Back</button>
             <button class="btn-back hidden py-2 bg-[#015E6A] border-0 lg:w-1/4 w-full text-white rounded-2xl" type="button">Back</button>
@@ -155,6 +170,18 @@
             <button class="btn-next-third hidden py-2 bg-[#FF6600] border-0 lg:w-1/4  w-full text-white rounded-2xl">Next</button>
             <button class="btn-kirim hidden py-2 bg-[#FF6600] border-0 w-full lg:w-1/4 text-white rounded-2xl"
             type="submit">Submit</button>
+            <button disabled class="btn-Loading gap-2 hidden flex justify-center cursor-pointer select-none py-2 bg-[#ff6600ad] border-0 w-full lg:w-1/4 text-white rounded-2xl"
+            type="submit">
+            <svg class="h-4 w-4 animate-spin my-auto" viewBox="3 3 18 18">
+              <path class="fill-blue-800"
+                d="M12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z">
+              </path>
+              <path class="fill-blue-100"
+                d="M16.9497 7.05015C14.2161 4.31648 9.78392 4.31648 7.05025 7.05015C6.65973 7.44067 6.02656 7.44067 5.63604 7.05015C5.24551 6.65962 5.24551 6.02646 5.63604 5.63593C9.15076 2.12121 14.8492 2.12121 18.364 5.63593C18.7545 6.02646 18.7545 6.65962 18.364 7.05015C17.9734 7.44067 17.3403 7.44067 16.9497 7.05015Z">
+              </path>
+            </svg>
+            Sumbit
+          </button>
           </div>
         </form>
       </div>
@@ -181,7 +208,6 @@
     const btnNextToThird = document.querySelector('.btn-next-third');
     const btnBack = document.querySelector('.btn-back');
     const btnBackSecond = document.querySelector('.btn-back-second');
-    const btnLoading = document.querySelector('.btn-loading');
     const myAlert = document.querySelector('.my-alert');
     const alert_del = document.querySelector('.alert-del');
     const secondSection = document.querySelector('.secound-section');
@@ -196,6 +222,7 @@
     const bar2Progress = document.querySelector('.bar2Progress');
     const bar3Progress = document.querySelector('.bar3Progress');
     const descProgram = document.querySelector('.descProgram');
+    const btnLoading = document.querySelector('.btn-Loading');
     
     function test() {
       console.log("test");
@@ -248,9 +275,9 @@
     });
   
     btnNextToSecond.addEventListener('click', (e) => {
+      e.preventDefault();
       const inpName = document.getElementById('name');
       const inpPhone = document.getElementById('phone');
-      e.preventDefault();
       if(!(inpName.checkValidity() && inpPhone.checkValidity())){
         inpPhone.reportValidity();
         inpName.reportValidity();
@@ -261,7 +288,17 @@
 
     btnNextToThird.addEventListener('click', (e) => {
       e.preventDefault();
-      third();
+      const storeName = document.getElementById('storeName');
+      const address = document.getElementById('address');
+      const storePhoneNumber = document.getElementById('storePhoneNumber');
+      e.preventDefault();
+      if(!(storeName.checkValidity() && address.checkValidity() && storePhoneNumber.checkValidity())){
+        storePhoneNumber.reportValidity();
+        address.reportValidity();
+        storeName.reportValidity();
+      }else{
+        third();
+      }
     });
 
     form.addEventListener('submit', (e) => {
