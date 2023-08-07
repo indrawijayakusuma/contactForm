@@ -9,10 +9,10 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"  rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/b249ac0a69.js" crossorigin="anonymous"></script>
-  <title>test</title>
+  <title>BNI Form</title>
 </head>
 
-<body class="p-0 m-0">
+<body class="p-0 m-0 bg-white" style="min-height: 100vh; position: relative;">
 
 <!-- navbar -->
 <nav class="border-gray-200 bg-gray-50 shadow-md">
@@ -32,6 +32,10 @@
           <a href="index.html" class=" block py-2 pl-3 pr-4 text-white bg-[#FF6600] rounded md:bg-transparent md:text-[#FF6600] md:p-0" aria-current="page">Home</a>
         </li>
         <li>
+          <a href="form.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FF6600] md:p-0">Form</a>
+        </li>
+        
+        <li>
           <a href="hallOfFame.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FF6600] md:p-0">Hall of Fame</a>
         </li>
       </ul>
@@ -40,291 +44,44 @@
 </nav>
 <!-- endNavbar -->
 
-  <div class="bg-slate-500 flex h-[300px] lg:h-[400px]">
-    <h1 class="text-3xl m-auto">AOL KOL</h1>
+  <div class=" flex my-8 h-[50%] lg:h-[80%] mt-0 lg:mt-8">
+    <img class="lg:w-[70%] flex justify-center m-auto object-fill" src="as.png" alt="">
   </div>
 
-<!-- progressBar -->
-  <div class="lg:w-[50%] flex w-[90%] mt-16 m-auto mb-4 gap-0.5 justify-center">
-    <div class="bg-slate-40 flex flex-col items-center text-center">
-      <div class="relative w-8 h-8 bg-[#FF6600] rounded-full text-center"><span class="absolute text-xl text-white left-2.5 top-0">1</span></div>
-      <p class="progress1 text-xs my-1">In Progress</p>
-      <p class="finished1 hidden text-xs my-1">Finished</p>
-      <p class="text-xs text-center font-semibold">Personal Information</p>
-    </div>
-    <svg height="10" width="80">
-      <line x1="0" y1="10" x2="80" y2="10" style="stroke:rgb(255,0,0);stroke-width:2" />
-      Sorry, your browser does not support inline SVG.
-    </svg>
-    <div>
-      <div class="flex bar2Progress flex-col items-center">
-        <div class="relative w-8 h-8 border text-gray-400 border-gray-400 rounded-full text-center"><span class="absolute text-xl left-2.5 top-0">2</span></div>
-        <p class="text-title-2 text-xs my-1 text-gray-400">Waiting</p>
-        <p class="text-xs text-center font-semibold text-gray-400">Store Information</p>
+  <div class="w-[90%] lg:w-[70%]  m-auto bg-white py-10 rounded-3xl shadow-lg border-2 border-orange-600">
+    <div class="w-full flex flex-row">
+      <div class="bg-red-1000 flex justify-center mx-auto w-1/2 ml-2">
+        <img class="w-[125%]" src="3901287.jpg" alt="">
       </div>
-      <div class="bar2Finished hidden flex flex-col items-center">
-        <div class="relative w-8 h-8 bg-[#FF6600] text-white rounded-full text-center"><span class="absolute text-xl left-2.5 top-0">2</span></div>
-        <p class="progress2 text-title-2 text-xs my-1">Progress</p>
-        <p class="finished2 hidden text-title-2 text-xs my-1">Finished</p>
-        <p class="text-xs text-center font-semibold">Store Information</p>
-      </div>
-    </div>
-    <svg height="10" class="text-center" width="80">
-      <line x1="0" y1="10" x2="80" y2="10" style="stroke:rgb(255,0,0);stroke-width:2" />
-      Sorry, your browser does not support inline SVG.
-    </svg>
-    <div>
-      <div class="bar3Progress flex flex-col items-center">
-        <div class="relative w-8 h-8 border text-gray-400 border-gray-400 rounded-full text-center"><span class="absolute text-xl left-2.5 top-0">3</span></div>
-        <p class=" text-xs text-title-3 my-1 text-gray-400">Waiting</p>
-        <p class=" text-xs text-center font-semibold text-gray-400">Store Media Information</p>
-      </div>
-      <div class="bar3Finished hidden flex flex-col items-center">
-        <div class="relative w-8 h-8 bg-[#FF6600] text-white rounded-full text-center"><span class="absolute text-xl left-2.5 top-0">3</span></div>
-        <p class="progress3 text-xs my-1">Progress</p>
-        <p class="text-xs text-center font-semibold">Store Information</p>
-      </div>
-    </div>
-  </div>
-<!-- endProgressBar -->
-
-<!-- form -->
-  <div class="descProgram flex lg:w-[50%] w-[90%] justify-center m-auto rounded-lg shadow-md mb-4">
-    <div class="p-8  w-full bg-white text-center">
-      <h1 class="m-auto font-bold text-xl mb-2">Form Program</h1>
-      <p class="text-justify text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facere accusamus id cum. Voluptates at cumque molestias beatae, natus itaque facere vero earum nulla velit ipsam cum maiores, qui minima.</p>
-    </div>
-  </div>
-
-  <div class="flex lg:w-[50%] w-[90%] justify-center m-auto rounded-lg shadow-lg">
-    <div class="p-8 w-full bg-white">
-      <div class="mt-1">
-        <div
-          class="my-alert flex justify-between hidden bg-gray-50 border border-green-200 text-sm text-green-600 rounded-md p-4"
-          role="alert">
-          <div> 
-            <span class="font-bold">Success</span> submited! data anda telah terkirim.
-          </div>
-          <strong class="text-xl align-center cursor-pointer alert-del">&times;</strong>
+      <div class="w-1/2 m-auto justify-center">
+        <h1 class="text-center mx-auto lg:py-4 font-bold lg:text-5xl text-xs  ">Get Started</h1>
+        <div class="flex m-auto flex-col gap-4 lg:w-full w-3/4 mt-4">
+            <a class="lg:px-8 px-2 flex m-auto justify-between cursor-pointer select-none lg py-1 bg-[#ff6600ad] border-0 w-full lg:w-[80%] lg:py-6 text-white lg:rounded-2xl rounded-md font-semibold lg:text-2xl text-sm" href="form.html">
+            Form 
+            <svg class="mt-1 lg:h-8" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M0 96C0 60.7 28.7 32 64 32H512c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM128 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm32-128a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM128 384a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm96-248c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224z"/></svg>
+          </a>
+          <a class="lg:px-8 px-2 flex m-auto justify-between cursor-pointer select-none lg py-1 bg-[#ff6600ad] border-0 w-full lg:w-[80%] lg:py-6 text-white lg:rounded-2xl rounded-md font-semibold lg:text-2xl text-sm" href="hallOfFame.html">
+            Hall of Fame
+            <svg class="mt-1 lg:h-8" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z"/></svg>
+          </a>
         </div>
-        <form method="post" name="wpu-contact-form">
-          <div class="first-section"> 
-            <p class="m-auto font-bold text-center text-xl">Personal Information</p>
-            <p class="text-sm text-gray-400 text-center mb-6">Please enter your personal information</p>
-            <div class="my-3">
-              <label for="name" class="ml-2">Name</label>
-              <input required id="name" placeholder="Enter your name" type="text" name="nama" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
-            </div>
-            <div class="my-3">
-              <label for="phone" class="ml-2">Phone Number</label>
-              <input required id="phone" placeholder="Enter your phone number" type="text" name="phone" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
-            </div>
-          </div>
-          <div class="secound-section hidden">
-            <p class="m-auto font-bold text-xl">Store Information</p>
-            <p class="text-sm text-gray-400 mb-6">Please enter your store information</p>
-            <div class="my-3">
-              <label for="storeName" class="ml-2">Store Name</label>
-              <input required id="storeName" placeholder="Enter your store name" type="text" name="storeName" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
-            </div>
-            <div class="my-3">
-              <label for="address" class="ml-2">Address</label>
-              <textarea required id="address" rows="4" name="address" class="mt-1.5 block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your store address"></textarea>
-            </div>
-            <div class="my-3">
-              <label for="storePhoneNumber" class="ml-2">Phone Number</label>
-              <input required id="storePhoneNumber" placeholder="Enter your store phone number" type="text" name="storePhoneNumber" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
-            </div>
-          </div>
-          <div class="third-section hidden">
-            <p class="m-auto font-bold text-xl">Social Media</p>
-            <p class="text-sm text-gray-400 mb-6">Please enter your store social media</p>
-            <div class="my-3">
-              <label for="instagram" class="ml-2">Instagram</label>
-              <input id="instagram" placeholder="Enter your store instagram" type="text" name="instagram" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
-            </div>
-            <div class="my-3">
-              <label for="tiktok" class="ml-2">Tiktok</label>
-              <input id="tiktok" placeholder="Enter your store tiktok" type="text" name="tiktok" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
-            </div>
-            <div class="my-3">
-              <label for="facebook" class="ml-2">Facebook</label>
-              <input id="facebook" placeholder="Enter your store facebook" type="text" name="facebook" class="mt-1.5 border-gray-300 p-6 border w-full h-11 rounded-xl" />
-            </div>
-          </div>
-          <div class="flex justify-center m-auto gap-2 w-[70%] mt-8">
-            <button type="button" disabled
-              class="btn-loading inline-flex w-auto cursor-pointer select-none hidden appearance-none items-center justify-center space-x-2 rounded border border-blue-700 bg-blue-700 px-3 py-2 text-sm font-medium text-white transition hover:border-blue-800 hover:bg-blue-800 focus:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300 disabled:pointer-events-none disabled:opacity-75">
-              <svg class="h-4 w-4 animate-spin" viewBox="3 3 18 18">
-                <path class="fill-blue-800"
-                  d="M12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z">
-                </path>
-                <path class="fill-blue-100"
-                  d="M16.9497 7.05015C14.2161 4.31648 9.78392 4.31648 7.05025 7.05015C6.65973 7.44067 6.02656 7.44067 5.63604 7.05015C5.24551 6.65962 5.24551 6.02646 5.63604 5.63593C9.15076 2.12121 14.8492 2.12121 18.364 5.63593C18.7545 6.02646 18.7545 6.65962 18.364 7.05015C17.9734 7.44067 17.3403 7.44067 16.9497 7.05015Z">
-                </path>
-              </svg>
-            </button>
-            <button class="btn-back-second hidden py-2 bg-[#015E6A] border-0 lg:w-1/4  w-full text-white rounded-2xl" type="button">Back</button>
-            <button class="btn-back hidden py-2 bg-[#015E6A] border-0 lg:w-1/4 w-full text-white rounded-2xl" type="button">Back</button>
-            <button class="btn-next-second py-2 bg-[#FF6600] w-1/2 lg:w-1/4 border-0 text-white rounded-2xl">Next</button>
-            <button class="btn-next-third hidden py-2 bg-[#FF6600] border-0 lg:w-1/4  w-full text-white rounded-2xl">Next</button>
-            <button class="btn-kirim hidden py-2 bg-[#FF6600] border-0 w-full lg:w-1/4 text-white rounded-2xl"
-            type="submit">Submit</button>
-            <button disabled class="btn-Loading gap-2 hidden flex justify-center cursor-pointer select-none py-2 bg-[#ff6600ad] border-0 w-full lg:w-1/4 text-white rounded-2xl"
-            type="submit">
-            <svg class="h-4 w-4 animate-spin my-auto" viewBox="3 3 18 18">
-              <path class="fill-blue-800"
-                d="M12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z">
-              </path>
-              <path class="fill-blue-100"
-                d="M16.9497 7.05015C14.2161 4.31648 9.78392 4.31648 7.05025 7.05015C6.65973 7.44067 6.02656 7.44067 5.63604 7.05015C5.24551 6.65962 5.24551 6.02646 5.63604 5.63593C9.15076 2.12121 14.8492 2.12121 18.364 5.63593C18.7545 6.02646 18.7545 6.65962 18.364 7.05015C17.9734 7.44067 17.3403 7.44067 16.9497 7.05015Z">
-              </path>
-            </svg>
-            Sumbit
-          </button>
-          </div>
-        </form>
       </div>
     </div>
   </div>
-  <!-- endForm -->
+
+  <div class="h-[200px] bg-white">
+
+  </div>
 
   <!-- footer -->
-  <footer class="bg-[#1E1E1E] mt-20 p">
-    <div>
-      <p>ewfweewf</p>
-    </div>
+  <footer class="bg-[#1E1E1E] mt-80 w-[100%]" style="bottom: 0px; position: absolute;">
     <div class=" p-10 bg-[#121212] mb-0">
-      <p class="text-white w-[80%] m-auto">© Hak Cipta 2023 PT Bank Negara Indonesia (Persero), Tbk.</p>
+      <p class="text-white w-[80%] m-auto lg:text-lg lg:text-center text-2xs">© Hak Cipta 2023 PT Bank Negara Indonesia (Persero), Tbk.</p>
     </div>
   </footer>
   <!-- endFooter -->
   
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwfrdU3WkDMf0PQI3iCTbMWTCR7Epnp4_xONCW2n4opkkO6Q4AG9OubPHSSe_7xKXBi/exec';
-    const form = document.forms['wpu-contact-form'];
-    const btnKirim = document.querySelector('.btn-kirim');
-    const btnNextToSecond = document.querySelector('.btn-next-second');
-    const btnNextToThird = document.querySelector('.btn-next-third');
-    const btnBack = document.querySelector('.btn-back');
-    const btnBackSecond = document.querySelector('.btn-back-second');
-    const myAlert = document.querySelector('.my-alert');
-    const alert_del = document.querySelector('.alert-del');
-    const secondSection = document.querySelector('.secound-section');
-    const firstSection = document.querySelector('.first-section');
-    const thirdSection = document.querySelector('.third-section');
-    const finished1 = document.querySelector('.finished1');
-    const finished2 = document.querySelector('.finished2');
-    const progress1 = document.querySelector('.progress1');
-    const progress2 = document.querySelector('.progress2');
-    const bar2Finished = document.querySelector('.bar2Finished');
-    const bar3Finished = document.querySelector('.bar3Finished');
-    const bar2Progress = document.querySelector('.bar2Progress');
-    const bar3Progress = document.querySelector('.bar3Progress');
-    const descProgram = document.querySelector('.descProgram');
-    const btnLoading = document.querySelector('.btn-Loading');
-    
-    function test() {
-      console.log("test");
-    }
-
-    const second = () => {
-      secondSection.classList.toggle('hidden');
-      firstSection.classList.toggle('hidden');
-      btnNextToSecond.classList.toggle('hidden');
-      btnNextToThird.classList.toggle('hidden');
-      btnBack.classList.toggle('hidden');
-      finished1.classList.toggle('hidden');
-      progress1.classList.toggle('hidden'); 
-      bar2Finished.classList.toggle('hidden'); 
-      bar2Progress.classList.toggle('hidden'); 
-      descProgram.classList.add('hidden'); 
-      // title1.innerHTML = 'Finished';
-      // title2.innerHTML = 'Progress';
-      // textTitle2.forEach(title => title.classList.remove('text-gray-400'));
-      // progress2.classList.remove('border', 'text-gray-400', 'border-gray-400');
-      // progress2.classList.add('bg-[#FF6600]','text-white');
-    }
-
-    const third = () => {
-      btnNextToThird.classList.toggle('hidden');
-      secondSection.classList.toggle('hidden');
-      thirdSection.classList.toggle('hidden');
-      btnKirim.classList.toggle('hidden');
-      btnBack.classList.toggle('hidden');
-      btnBackSecond.classList.toggle('hidden');
-      finished2.classList.toggle('hidden');
-      progress2.classList.toggle('hidden');
-      bar3Finished.classList.toggle('hidden'); 
-      bar3Progress.classList.toggle('hidden'); 
-      // title2.innerHTML = 'Finished';
-      // title3.innerHTML = 'Progress';
-      // textTitle3.forEach(title => title.classList.remove('text-gray-400'));
-      // progress3.classList.remove('border', 'text-gray-400', 'border-gray-400');
-      // progress3.classList.add('bg-[#FF6600]','text-white');
-    }
-
-    btnBack.addEventListener('click', () => {
-      second();
-      descProgram.classList.toggle('hidden'); 
-    });
-
-    btnBackSecond.addEventListener('click', (e) => {
-      e.preventDefault();
-      third();
-    });
-  
-    btnNextToSecond.addEventListener('click', (e) => {
-      e.preventDefault();
-      const inpName = document.getElementById('name');
-      const inpPhone = document.getElementById('phone');
-      if(!(inpName.checkValidity() && inpPhone.checkValidity())){
-        inpPhone.reportValidity();
-        inpName.reportValidity();
-      }else{
-        second();
-      }
-    });
-
-    btnNextToThird.addEventListener('click', (e) => {
-      e.preventDefault();
-      const storeName = document.getElementById('storeName');
-      const address = document.getElementById('address');
-      const storePhoneNumber = document.getElementById('storePhoneNumber');
-      e.preventDefault();
-      if(!(storeName.checkValidity() && address.checkValidity() && storePhoneNumber.checkValidity())){
-        storePhoneNumber.reportValidity();
-        address.reportValidity();
-        storeName.reportValidity();
-      }else{
-        third();
-      }
-    });
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      // ketika tombol submit diklik
-      // tampilkan tombol loading, hilangkan tombol kirim
-      btnLoading.classList.toggle('hidden');
-      btnKirim.classList.toggle('hidden');
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then((response) => {
-          // tampilkan tombol kirim, hilangkan tombol loading
-          btnLoading.classList.toggle('hidden');
-          btnKirim.classList.toggle('hidden');
-          // // tampilkan alert
-          myAlert.classList.toggle('hidden');
-
-          form.reset();
-          console.log('Success!', response);
-        })
-        .catch((error) => console.error('Error!', error.message));
-    });
-
-    alert_del.addEventListener('click', () => {
-      alert_del.parentElement.classList.add('hidden');
-    })
-  </script>
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
 </body>
 
