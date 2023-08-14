@@ -1,4 +1,5 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwfrdU3WkDMf0PQI3iCTbMWTCR7Epnp4_xONCW2n4opkkO6Q4AG9OubPHSSe_7xKXBi/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxg00jqMixRONRMx11MuaTubBrT6HQ6NLRYL3pF8UZmXKH33AhK_81GS2DO53g0e0kmXg/exec';
+
 const form = document.forms['wpu-contact-form'];
 const btnKirim = document.querySelector('.btn-kirim');
 const myAlert = document.querySelector('.my-alert');
