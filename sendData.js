@@ -26,7 +26,7 @@ fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     modalBlack.classList.toggle('hidden');
 
     form.reset();
-    descProgram .scrollIntoView();
+    descProgram.scrollIntoView();
 
     console.log('Success!', response);
     })

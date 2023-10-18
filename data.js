@@ -47,7 +47,7 @@ const allData = () => {
                 ${item.name}
             </td>
             <td class="px-6 py-4 text-center">
-                ${item.points}
+                ${item.kupon}
             </td>
         </tr>`
         })
@@ -93,7 +93,7 @@ const searchData = (search) => {
                 ${item.name}
             </td>
             <td class="px-6 py-4 text-center">
-                ${item.points}
+                ${item.kupon}
             </td>
             </tr>`
         })
